@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Fira+Sans:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" src="/templates/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet"> 
+
+
+
+    <title>Título</title>
+</head>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <form action="/home">
+                <button class="btn-none"><img src="/static/Sin título.png" alt="" width="200px" style="margin-left: 25%;" >
+                </button>
+            </form>
+
+
+            <ul>
+                <li><a href="/home">Inicio</a></li>
+                <li><a href="/shop">Tienda</a></li>
+                <li><a href="/docs">Sobre nosotros</a></li>
+                <li><a href="/discord">Discord</a></li>
+                <li><a href="/socios">Socios</a></li>
+            </ul>
+        </div>
+    
+
+   
+    </div>
+</header>
+
+<body>
+    {% block content %} {% endblock %}
+</body>
+
+
+
+</html>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/static/358291-sepik.jpg);
+    background-position: left;
+}
+.container{
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.80), rgba(90, 40, 90, 0.80)), url(/static/58-586112_3000-x-3000-pixel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width: 80;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, "sans-serif";
+    font-size: 20px;
+}
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(247, 232, 22);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+
+}
+.navbar ul li:hover::before{
+    width: 100%;
+}
+.btn-none{
+    background: none;
+    border: 0;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+</style>

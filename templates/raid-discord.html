@@ -1,0 +1,104 @@
+{% extends "Base.html" %}
+
+{% block content %}
+
+<div class="navbar-shop">
+    <div class="Título-navbar">
+        <ul class="columnas">
+            <p class="rgb-letters"><a href="http://localhost:5000/shop" style="text-decoration:none ;" class="rgb-letters">Tienda</a> <p>➤</p></p>
+            <p class="rgb-letters"><a href="http://localhost:5000/shop" style="text-decoration:none ;" class="rgb-letters">Discord Bot Raider</a> <p>➤</p></p>
+    </div>
+</div>
+<div class="container-2">
+    <div class="in-line">
+        <h2 style="color: yellow;">☢</h2>
+        <h2 class="rgb-letters" style="font-size: 150%;">Bot Discord Raider</h2>
+        <div class="in-line" style="margin-top: 2%;">
+            <p>Idioma</p>
+            <p class="rgb-letters">➣</p>
+            <p style="color: yellow;">Python</p>
+        </div>
+        <div class="in-line2" style="margin-top: 1%;">
+            <p>Descripción</p>
+            <p class="rgb-letters">►</p>
+            <p style="color: yellow;" >Un bot Raider de discord, elimina todos los canales del servidor, los remplaza por nuevos con el nombre que tu quieras, elimina todos los roles crea roles nuevos con el nombre que tu elijas y spamea por los canales el mensaje que tu quieras</p>
+        </div>
+
+    </div>  
+</div>
+
+<style>
+     .in-line h2{
+        display: inline ;
+        margin: 1%;
+    }
+    .in-line p{
+        display: inline ;
+        margin: 1%;
+    }
+    .in-line2 p{
+        display: inline ;
+        margin: 0.1%;
+        
+    }
+    .navbar-shop{
+    background: none;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: #000000;
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #41a69e; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+    
+}
+.columnas p{
+    margin: 2%;
+    align-items: center;
+   display: inline;
+  
+   
+}
+.rgb-letters{
+    animation-name: rgb;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.container-2{
+    background: #2a2828;
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #df5a63; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+@keyframes rgb{
+0%{
+    color: aqua;
+}
+25%{
+    color: rgb(247, 29, 255);
+}
+50%{
+    color: rgb(92, 169, 155);
+}
+75%{
+    color:violet;
+}
+100%{
+    color: rgb(205, 76, 76);
+}
+ }
+</style>
+{% endblock %}

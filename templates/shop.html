@@ -1,0 +1,231 @@
+{% extends "Base.html" %}
+
+{% block content %}
+
+<div class="navbar-shop">
+    <div class="Título-navbar">
+        <ul class="columnas">
+            <p class="rgb-letters"><a href="http://localhost:5000/shop" style="text-decoration:none ;" class="rgb-letters">Tienda</a> <p>➤</p></p>
+    </div>
+</div>
+<div class="container-2">
+    <h2 id="color-naranja" class="in-line" style="font-size: 150%;">★ Delta Shop</h2>
+    <h2 class="in-line">Compras</h2>
+        
+
+    <p id="texto-2" style="color: aqua;">Adquiere uno de nuestros productos! </p>
+    <p id="texto-2">Contamos con servidores preconfigurados de minecraft, mapas de minecraft, bots de discord y herramientas</p>
+    
+
+</div>
+<div class="container-3">
+    <h2 class="rgb-letters" style="font-size: 150%;">ꕤ  Bot Discord</h2>
+        
+
+    <p id="texto-2">Bots personalizados para tu servidor de discord a buen precio</p>
+    <a href="/shop/bot_raider_discord" style="text-decoration: none; font-size: 125%;"><p  class="separar-5" style="color:aqua;">✚ Bot Raider Discord</p></a>
+    
+
+</div>
+
+<div class="container-3">
+    <h2 class="rgb-letters" style="font-size: 150%;">❒ Servidores de Minecraft</h2>
+        
+
+    <p id="texto-2">Compra un servidor de minectaft configurado para tu servidor </p>
+    <p style="color: purple; font-size: 80%;">🧨 Hosting No Incluido 🧨</p>
+    <a href="/shop/Lobby" style="text-decoration: none; font-size: 125%;"><p  class="separar-5" style="color:aqua;">Lobby</p></a>
+    <a href="/shop/MMO_RPGZ" style="text-decoration: none; font-size: 125%;"><p  class="separar-5" style="color:aqua;">MMO RpgZ</p></a>
+
+    
+
+</div>
+
+
+
+<style>
+.separar-5{
+    margin-top: 5%;
+}
+
+
+
+
+
+.navbar-shop{
+    background: none;
+
+    background: #000000;
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #41a69e; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+    
+}
+.columnas p{
+    margin: 4%;
+    align-items: center;
+   display: inline;
+   
+}
+.rgb-letters{
+    animation-name: rgb;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.container-shop{
+    background-color: black;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+}
+
+.letra-titulo{
+    font-family: 'Antonio', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+}
+
+.textos{
+    font-size: 70%;
+}
+.container-shop-text{
+    color: white;
+    font-size: 80%;
+    text-align: center;
+    border: 1px solid rgb(146, 247, 202) ;
+}
+#btn-shop{
+   
+    font-size: 65%;
+    margin-left:2% ;
+
+}
+
+
+#container-shop-2{
+    margin-right: 70%;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    animation: border-rgb;
+    animation-duration: 7s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.container-2{
+    background: #2a2828;
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #c226cd; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+.container-3{
+    background: #2a2828;
+    font-weight: bold; 
+    padding: 15px; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+    animation: border-left-rgb;
+    animation-duration: 7s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.in-line{
+    display: inline;
+    margin: 1%;
+}
+
+.color-verde{
+    color: forestgreen;
+}
+#logo{
+    
+    height: calc(100% - XXpx); 
+
+    float: right;
+    margin-top: -200px;
+}
+#texto-2{
+    margin-top: 3%;
+    margin-right: 5%;
+}
+#color-naranja{
+    color: orange;
+}
+.color-cian{
+    color: aqua;
+}
+@keyframes border-left-rgb {
+    0%{
+        border-left:8px solid #c226cd; 
+}
+    25%{
+        border-left:8px solid rgb(81, 236, 38); 
+}
+    50%{
+        border-left:8px solid rgb(92, 169, 155);  
+}
+    75%{
+        border-left:8px solid violet;
+}
+    100%{
+        border-left: 8px solid red;
+}
+    
+}
+@keyframes rgb{
+0%{
+    color: aqua;
+}
+25%{
+    color: rgb(81, 236, 38); 
+}
+50%{
+    color: rgb(92, 169, 155);
+}
+75%{
+    color:violet;
+}
+100%{
+    color: rgb(205, 76, 76);
+}
+}
+@keyframes border-rgb{
+0%{
+    border: 2px solid orange;
+}
+25%{
+    border: 2px solid  blue;
+}
+50%{
+    border: 2px solid rgb(92, 169, 155);
+}
+75%{
+    border: 2px solid violet;
+
+}
+100%{
+    border: 2px solid rgb(205, 76, 76);
+}
+
+}
+
+</style>
+{% endblock %}

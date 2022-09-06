@@ -1,0 +1,77 @@
+{% extends "Base.html" %}
+
+{% block content %}
+
+<div class="navbar-shop">
+    <div class="Título-navbar">
+        <ul class="columnas">
+            <p class="rgb-letters"><a href="http://localhost:5000/shop" style="text-decoration:none ;" class="rgb-letters">Tienda</a> <p>➤</p></p>
+            <p class="rgb-letters"><a href="http://localhost:5000/shop" style="text-decoration:none ;" class="rgb-letters">Discord Bot Moderador</a> <p>➤</p></p>
+    </div>
+</div>
+<div class="container-2">
+   <p id="texto-2">En desarrollo. Vuelva mas tarde</p>
+</div>
+
+<style>
+    .navbar-shop{
+    background: none;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: #000000;
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #41a69e; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+    
+}
+.columnas p{
+    margin: 2%;
+    align-items: center;
+   display: inline;
+  
+   
+}
+.rgb-letters{
+    animation-name: rgb;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.container-2{
+    background: #2a2828;
+    font-weight: bold; 
+    padding: 15px; 
+    border-left:8px solid #df5a63; 
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px; 
+    color: white;
+    margin-top: 3%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+@keyframes rgb{
+0%{
+    color: aqua;
+}
+25%{
+    color: blue;
+}
+50%{
+    color: rgb(92, 169, 155);
+}
+75%{
+    color:violet;
+}
+100%{
+    color: rgb(205, 76, 76);
+}
+ }
+</style>
+{% endblock %}
